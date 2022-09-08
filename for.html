@@ -1,0 +1,24 @@
+<canvas width="800" height="600"></canvas>
+<script>
+    
+    function square(x,y,color) {
+    
+    var canva = document.querySelector('canvas');
+    var brush = canva.getContext('2d');
+
+    brush.fillStyle = color;
+    brush.fillRect(x,y,50,50);
+    brush.fillStroke = 'black';
+    brush.strokeRect(x,y,50,50);
+}
+
+    ;
+
+    for (var x = 0; x < 800; x = x + 50) {
+
+    square(x, 0, 'gray');
+
+ 
+}
+
+</script>
