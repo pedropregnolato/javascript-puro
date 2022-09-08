@@ -1,19 +1,19 @@
 <canvas width="800" height="600"></canvas>
 <script>
     
-    function quadrado(x) {
+    function quadrado(x,y) {
     
     var canva = document.querySelector('canvas');
     var brush = canva.getContext('2d');
 
     brush.fillStyle = 'white';
-    brush.fillRect(x,0,50,50);
+    brush.fillRect(x,y,50,50);
     brush.fillStroke = 'black';
-    brush.strokeRect(x,0,50,50);
+    brush.strokeRect(x,y,50,50);
 }
 
-    quadrado(0);
-    quadrado(50);
-    quadrado(100);
+    quadrado(0,0);
+    quadrado(50,50);
+    quadrado(100,100);
 
 </script>
