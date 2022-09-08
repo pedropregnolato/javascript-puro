@@ -1,0 +1,17 @@
+<canvas width="800" height="600"></canvas>
+<script>
+    
+    function quadrado() {
+    
+    var canva = document.querySelector('canvas');
+    var brush = canva.getContext('2d');
+
+    brush.fillStyle = 'white';
+    brush.fillRect(0,0,50,50);
+    brush.fillStroke = 'black';
+    brush.strokeRect(0,0,50,50);
+}
+
+    quadrado();
+
+</script>
