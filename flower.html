@@ -1,0 +1,36 @@
+<canvas width="800" height="600"></canvas>
+
+<script>
+
+    var canva = document.querySelector('canvas');
+    var brush = canva.getContext('2d');
+    brush.fillStyle = 'lightgreen';
+    brush.fillRect(0, 0, 800, 600);
+
+    function circle(x, y, radius, color) {
+
+        brush.fillStyle = color;
+        brush.beginPath();
+        brush.arc(x, y, radius, 0, 2 * 3.14);
+        brush.fill();
+    }
+    //x top
+    circle(390, 290, 8, 'yellow');
+    circle(410, 290, 8, 'yellow');
+
+    //y bottom
+    circle(390, 310, 8, 'yellow');
+    circle(410, 310, 8, 'yellow');
+
+    //mid
+    circle(400, 300, 10, 'brown');
+
+    //x 
+    circle(380, 300, 10, 'red');
+    circle(420, 300, 10, 'red');
+
+    //y 
+    circle(400, 320, 10, 'red');
+    circle(400, 280, 10, 'red');
+
+</script>
