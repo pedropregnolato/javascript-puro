@@ -1,0 +1,20 @@
+<canvas width="800" height="600"></canvas>
+<script>
+    var canva = document.querySelector('canvas');
+    var brush = canva.getContext('2d');
+
+    brush.fillStyle = 'white';
+    brush.fillRect(0, 0, 800, 400);
+    
+    brush.fillStyle = 'darkgreen';
+    brush.fillRect(100, 100, 550, 500);
+
+    brush.fillStyle = 'black';
+    brush.fillRect(185, 200, 130, 130);
+    brush.fillRect(430, 200, 130, 130);
+    brush.fillRect(315, 330, 115, 80);
+    brush.fillRect(265, 410, 218, 110);
+    brush.fillRect(265, 485, 65, 115);
+    brush.fillRect(418, 485, 65, 115);
+
+</script>

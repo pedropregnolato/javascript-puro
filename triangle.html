@@ -1,0 +1,17 @@
+<canvas width="800" height="600"></canvas>
+<script>
+    var canva = document.querySelector('canvas');
+    var brush = canva.getContext('2d');
+
+    brush.fillStyle = 'black';
+    brush.fillRect(0, 0, 800, 600);
+    
+    brush.fillStyle = 'white';
+    brush.beginPath();
+    brush.moveTo(400, 0);
+    brush.lineTo(0, 400);
+    brush.lineTo(800, 400);
+
+    brush.fill();
+    
+</script>
