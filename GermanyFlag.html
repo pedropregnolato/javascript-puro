@@ -1,0 +1,19 @@
+<canvas width="800" height="600">
+
+</canvas>
+
+<script>
+
+    var canva = document.querySelector('canvas');
+    var brush = canva.getContext('2d');
+
+    brush.fillStyle = 'black';
+    brush.fillRect(0, 0, 800, 600);
+
+    brush.fillStyle = 'red';
+    brush.fillRect(0,200,800,400);
+
+    brush.fillStyle = 'yellow';
+    brush.fillRect(0,400,800,600);
+
+</script>
